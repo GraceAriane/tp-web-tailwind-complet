@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S'inscrire</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+    <script type="module" src="assets/js/scriptFormulaire.js" defer></script>
+    <link rel="stylesheet" href="assets/css/styleFormulaire.css">
+    <link href="output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                montserrat: ['Montserrat', 'sans-serif'], // Ajouter une police
+              },
+            },
+          },
+        };
+    </script>
+</head>
+<body class="md:w-screen md:h-screen md:flex font-montserrat items-center md:overflow-hidden h-auto overflow-scroll">
+
+    <div class="container flex-col max-w-[85%] border h-[550px] mx-auto my-[40px] md:flex md:flex-row md:max-w-[850px] md:w-[850px]">
+
+        <img src="images/mains.png" alt="" class="md:w-[42%] w-[100%] h-[440px] md:h-[550px]">
+
+        <div class="form flex flex-col gap-[15px] h-[550px] [100%] py-[15px] px-[0px] bg-[rgb(247,247,247)] md:w-[58%]">
+
+            <div class="navbar-connexion-inscription w-[87%] mx-auto my-[5px] flex">
+
+                <a href="" class="action-connexion p-[15px] text-center w-[50%]">Se connecter</a>
+                <a href="" class="action-inscription cursor p-[15px] text-center w-[50%]">S'inscrire</a>
+            </div>
+            <div class="elements inscription w-[87%] mx-auto my-[5px] flex flex-col gap-[25px]">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-user-plus icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="text" placeholder="Nom d'utilisateur" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none">
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-at icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="email" placeholder="Email" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-regular fa-user icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="text" placeholder="Nom Complet" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                </div>
+                <div class="flex items-center">
+                    <i class="fa-solid fa-phone icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="number" placeholder="Numéro de telephone" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                </div>
+                <div class="password password-inscription relative flex items-center">
+                    <i class="fa-solid fa-key icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="password" placeholder="Mot de passe" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                    <div class="eyes absolute right-[13px]">
+                        <i class="fa-solid fa-eye text-[rgb(85,85,85)]"></i>
+                        <i class="fa-solid fa-eye-slash text-[rgb(85,85,85)] hidden"></i>
+                    </div>
+                </div>
+                <div class="button-inscription rounded-[20px] h-[45px] p-[5px] flex items-center text-center justify-center bg-gradient-to-r from-[rgb(127,183,242)] to-[rgb(31,107,207)]">
+                    <a href="" class="text-white font-semibold">S'INSCRIRE</a>
+                </div>
+            </div>
+
+            <div class="elements connexion w-[87%] mx-auto my-[5px] flex flex-col gap-[30px]">
+                <div class="flex items-center">
+                    <i class="fa-solid fa-user-plus icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="text" placeholder="Nom d'utilisateur" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                </div>
+                <div class="password password-connexion relative flex items-center">
+                    <i class="fa-solid fa-key icon-visible border-solid border-[rgb(204,204,204)] border-[1px] border-r-0 py-[15.5px] px-[15px] items-center rounded-tl-[5px] rounded-bl-[5px] bg-[rgb(238,238,238)] text-[rgb(85,85,85)] w-[45px]"></i>
+                    <input type="password" placeholder="Mot de passe" class="border-[rgb(204,204,204)] border-[1px] w-[100%] h-[49px] p-[8px] border[1.2px] border-[rgb(204,204,204)] border-solid rounded-tr rounded-br outline-none focus:bg-[rgb(238,238,238)]">
+                    <div class="eyes absolute right-[13px] ">
+                        <i class="fa-solid fa-eye text-[rgb(85,85,85)]"></i>
+                        <i class="fa-solid fa-eye-slash text-[rgb(85,85,85)] hidden"></i>
+                    </div>
+                </div>
+                <div class="option-remember-forgot flex justify-between text-[rgb(21,25,21)] text-[15px]">
+                    <div class="remember">
+                        <input type="checkbox" name="souvenir" id="souvenir">
+                        <label for="souvenir" class="mr-[5px]">Se souvenir de moi</label>
+                    </div>
+                    <div class="forgot">
+                        <a href="" class="text-[rgb(21,25,21)]">Mot de passe oublié ?</a>
+                    </div>
+                </div>
+                <div class="button-inscription rounded-[20px] h-[45px] p-[5px] flex items-center text-center justify-center bg-gradient-to-r from-[rgb(127,183,242)] to-[rgb(31,107,207)]">
+                    <a href="" class="text-white font-semibold">SIGN IN</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
